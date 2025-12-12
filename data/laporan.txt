@@ -1,0 +1,2 @@
+R7804D6|M843EE1|Uji Coba LMS HCC|Sekretaris menjalankan Uji Coba LMS HCC untuk fitur absen agar kedepannya catatan administrasi absensi HCC berjalan lebih baik dan arsip lebih tertata rapih.|maulana malik ibrahim|2025-12-08 15:14:35
+R987DC8||Tugas Python|Telah mengerjakan "Tugas Looping Python" dan dikumpulkan pada 8 Desember 2025|farid wadipraja|2025-12-08 16:10:15
