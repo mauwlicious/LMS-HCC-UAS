@@ -1,6 +1,7 @@
 # data_utils.py
 import os # untuk operasi file
 from utils import atomic_write # mengimpor fungsi atomic_write dari utils.py
+MEMBER_PATH = "data/members.txt" # path ke file data anggota
 
 def read_lines(path): # fungsi untuk membaca baris dari file
     if not os.path.exists(path): # jika file tidak ada, kembalikan list kosong
@@ -27,3 +28,50 @@ def find_lines_with_prefix(path, key_index, key_value): # fungsi untuk menemukan
         if len(parts) > key_index and parts[key_index] == key_value: # memeriksa apakah bagian pada indeks tertentu cocok dengan nilai kunci
             results.append((i, parts, raw))     # menambahkan hasil ke daftar
     return results # mengembalikan daftar hasil
+
+
+def search_rows(rows, keyword, cols): # fungsi untuk mencari baris berdasarkan keyword di kolom tertentu
+    """
+    Fungsi pencarian reusable
+
+    rows    : list data (list of list)
+    keyword : teks pencarian (string)
+    cols    : index kolom yang ingin dicari (list of int)
+    """
+
+    # Jika keyword kosong, tampilkan semua data
+    if not keyword: #jika keyword kosong
+        return rows # menampilkan semua baris
+
+    keyword = keyword.lower()  # ubah ke huruf kecil agar case-insensitive
+
+    filtered = [] # inisialisasi daftar hasil penyaringan
+
+    for r in rows: # iterasi setiap baris
+        # Gabungkan kolom-kolom yang ingin dicari
+        text = " ".join( # menggabungkan teks dari kolom yang ditentukan
+            r[i] for i in cols if i < len(r) # memastikan indeks kolom valid
+        ).lower() # ubah ke huruf kecil agar case-insensitive
+
+        # Jika keyword ditemukan, masukkan ke hasil
+        if keyword in text: # memeriksa apakah keyword ada dalam teks
+            filtered.append(r) # menambahkan baris ke hasil penyaringan
+
+    return filtered # mengembalikan daftar hasil penyaringan
+
+def member_exists_by_number(member_number):
+    """
+    Mengecek apakah nomor anggota sudah ada
+    """
+
+    lines = read_lines(MEMBER_PATH)
+
+    for ln in lines:
+        parts = ln.split("|")
+
+        # pastikan kolom cukup
+        if len(parts) >= 3:
+            if parts[2] == member_number:
+                return True
+
+    return False

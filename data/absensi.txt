@@ -1,3 +1,5 @@
 AF2F690|M9B1E4A|2025-12-08 15:12:40|Hadir|Membawakan materi
 A56636C|M662BF6|2025-12-08 16:07:44|Alpha|Tidak datang 3 kali berturut-turut (SP1)
 AAE10C9|M843EE1|2025-12-12 17:30:37|Hadir|Mengabsen
+A9846B2|M89F508|2025-12-13 17:52:47|Izin|Izin Sakit Jiwa
+AC3EE2C|M89F508|2025-12-16 01:10:10|Hadir|asep

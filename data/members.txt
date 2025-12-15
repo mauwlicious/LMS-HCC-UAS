@@ -1,5 +1,8 @@
-M843EE1|Aisha Nurra Datau|HCC2025002|IK25|pengurus|Sekretraris
-M89F508|Bintang|HCC2025003|IK25|pengurus|Bendahara
+M843EE1|Aisha Nurra Datau|HCC2025002|IK25|pengurus|Sekretaris
+M89F508|Bintang|HCC2025003|SI25|pengurus|Bendahara
 M9B1E4A|Maulana Malik Ibrahim|HCC2025001|IK25|pengurus|Ketua Umum
 M59AB5B|Fharhan Sumardi Saputra|HCC2025004|IK25|pengurus|Ketua Departemen I
-M662BF6|Farid Wadipraja|HCC2025005|IK25|pengurus|Ketua Departemen II
+MF3C72B|FARID WADIPRAJA|HCC2025005|IK25|member|Anggota
+M4507A8|RACHIM|HCC2025006|IK25|member|Anggota
+ME402E1|Novita|HCC2025008|IK25|pengurus|Bendahara
+M1C76D8|Ayu|HCC2025009|IK25|member|Staff departemen I
